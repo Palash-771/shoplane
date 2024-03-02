@@ -1,0 +1,355 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+} 
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .navbar a:hover {
+    border-bottom: 3px solid rgb(255, 255, 255);
+  }
+  
+  .navbar a.active {
+    border-bottom: 3px solid rgb(233, 233, 233);
+  }
+
+p{
+    color: rgb(194, 181, 181);
+}
+
+.header{
+    background: #000; 
+}
+
+.header .row{
+    margin-top: 70px;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding: 50px 0;
+    height: 470px;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: #ffffff;
+}
+
+.btn-main{
+    display: inline-block;
+    background: #de7c04;
+    color: rgb(255, 255, 255);
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.cart-img{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    margin-top: 10px;
+  }
+  
+  .btn-main:hover{
+      background-color: #035997;
+  
+  }
+  
+  .categories{
+      margin: 60px 0;
+  }
+  
+  .col-3{
+      flex-basis: 30%;
+      min-width: 250px;
+      margin-bottom: 30px;
+  }
+  
+  .col-3 img{
+      width: 100%;
+  }
+  
+  .small-container{
+      max-width: 1080px;
+      margin: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+  
+  .small-container h2{
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.2rem;
+  }
+  
+  .col-4{
+      flex-basis: 50%;
+      padding: 10px;
+      max-width: 220px;
+      margin-bottom: 50px;
+      transition: transform 0.5s;
+  }
+  
+  .col-4 img{
+      width: 100%;
+      height: 200px;
+  }
+  
+  .title{
+      color: rgb(41, 36, 36);
+      position: relative;
+      line-height: 60px;
+  }
+  
+  .box-container {
+      height: 340px;
+      box-shadow: 0 8px 6px -6px rgba(104, 99, 99, 0.712); 
+  }
+  
+  
+  .title::after{
+      content: '';
+      background: #210583;
+      width: 80px;
+      height: 5px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  
+  h4{
+      color: #ffffff;
+      font-weight: normal;
+  }
+  
+  .col-4 p{
+      font-size: 14px;
+  }
+  
+  .rating .fa{
+      color: #ffbf00
+  }
+  
+  .col-4:hover{
+      transform: translateY(-5px);
+  }
+  
+  .col-4 img:hover{
+      background: url(./techbg.jpg);
+  }
+   
+  .box-container .image-overlay {
+      background: rgba(0,0,0,0.7);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      -webkit-transition: all 0.4s ease-in-out 0s;
+      -moz-transition: all 0.4s ease-in-out 0s;
+      transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .box-container:hover .image-overlay{
+      opacity: 1;
+  }
+  
+    .content-details {
+      position: absolute;
+      text-align: center;
+      padding-left: 1em;
+      padding-right: 1em;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      -moz-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+     
+    .box-container:hover .content-details{
+      top: 50%;
+      left: 50%;
+      opacity: 1;
+    }
+     
+    .content-details h3{
+      color: #fff;
+      font-weight: 300;
+      margin-bottom: 0.5em;
+    }
+     
+    .content-details p{
+      color: #fff;
+      font-size: 0.8em;
+    }
+    .btn-secondary{
+        background-color: #137694;
+        width: 40px;
+        height: 30px;
+    }
+     
+    .fadeIn-bottom{
+      top: 80%;
+    }
+     
+    .fadeIn-top{
+      top: 20%;
+    }
+     
+    .fadeIn-left{
+      left: 20%;
+    }
+     
+    .fadeIn-right{
+      left: 80%;
+    }
+  
+    /* Contact Us */
+    .contact{
+        padding: 110px 30%;
+        height: 100%;
+        min-height: 100vh;
+    }
+    
+    .contact-form h1{
+        font-size: 80px;
+        color: rgb(14, 27, 150);
+        margin-bottom: 20px;
+    }
+    
+    .contact-form h1 span{
+        color:#e7790b;
+    }
+    
+    .contact-form p{
+        color: rgb(255, 255, 255);
+        line-height: 30px;
+        letter-spacing: 1px;
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+    
+    
+    .contact-form form input,form textarea{
+        width: 100%;
+        padding: 17px;
+        border: none;
+        outline: none;
+        background-color: #b4b0b0;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+    
+    .contact-form form .submit-btn{
+        display: inline-block;
+        background-color: #1414a1;
+        font-size: 27px;
+        font-weight: 600px;
+        border: 2px solid transparent;
+        border-radius: 40px;
+        width: 220px;
+        cursor: pointer;
+        transition: ease 0.30s;
+    
+    }
+    
+    .contact-form form .submit-btn:hover{
+        border: 2px solid #040303;
+        background-color: rgb(255, 93, 12);
+        transform: scale(1.1);
+    
+    }
+    
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: maxHeight 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}

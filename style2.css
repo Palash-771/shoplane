@@ -1,0 +1,263 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+    padding: 20px;
+} 
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .navbar a:hover {
+    border-bottom: 3px solid rgb(0, 0, 0);
+  }
+  
+  .navbar a.active {
+    border-bottom: 3px solid rgb(0, 0, 0);
+  }
+
+p{
+    color: rgb(0, 0, 0);
+}
+
+.header{
+    background: #7d7d7d; 
+}
+
+.header .row{
+    margin-top: 70px;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding: 50px 0;
+    height: 470px;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: #000000;
+}
+
+.cart-img{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    margin-top: 10px;
+  }
+  
+  .btn-main:hover{
+      background-color: #035997;
+  
+  }
+  
+  .categories{
+      margin: 60px 0;
+  }
+  
+  .col-3{
+      flex-basis: 30%;
+      min-width: 250px;
+      margin-bottom: 30px;
+  }
+  
+  .col-3 img{
+      width: 100%;
+  }
+  
+  .small-container{
+      max-width: 1080px;
+      margin: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+  
+  .small-container h2{
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.2rem;
+  }
+  
+  .col-4{
+      flex-basis: 50%;
+      padding: 10px;
+      max-width: 220px;
+      margin-bottom: 50px;
+      transition: transform 0.5s;
+  }
+  
+  .col-4 img{
+      width: 100%;
+      height: 200px;
+  }
+  
+  .title{
+      color: rgb(41, 36, 36);
+      position: relative;
+      line-height: 60px;
+  }
+  
+  .box-container {
+      height: 340px;
+      box-shadow: 0 8px 6px -6px rgba(104, 99, 99, 0.712);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+   /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  }
+  
+  
+  .title::after{
+      content: '';
+      background: #210583;
+      width: 80px;
+      height: 5px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  
+  h4{
+      color: #ffffff;
+      font-weight: normal;
+  }
+  
+  .col-4 p{
+      font-size: 14px;
+  }
+
+  
+  .col-4:hover{
+      transform: translateY(-5px);
+  }
+  
+  .col-4 img:hover{
+      background: url(./techbg.jpg);
+  }
+   
+  .box-container .image-overlay {
+      background: rgba(63, 63, 63, 0.7);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      -webkit-transition: all 0.4s ease-in-out 0s;
+      -moz-transition: all 0.4s ease-in-out 0s;
+      transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .box-container:hover .image-overlay{
+      opacity: 1;
+  }
+  
+    .content-details {
+      position: absolute;
+      text-align: center;
+      padding-left: 1em;
+      padding-right: 1em;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      -moz-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+     
+    .box-container:hover .content-details{
+      top: 50%;
+      left: 50%;
+      opacity: 1;
+    }
+     
+    .content-details h3{
+      color: #fff;
+      font-weight: 300;
+      margin-bottom: 0.5em;
+    }
+     
+    .content-details p{
+      color: #fff;
+      font-size: 0.8em;
+    }
+    .btn-secondary{
+        background-color: #5b32ff;
+        font-size: smaller;
+        width: 40px;
+        height: 30px;
+    }
+    .fadeIn-bottom{
+        top: 80%;
+      }
+       
+      .fadeIn-top{
+        top: 20%;
+      }
+       
+      .fadeIn-left{
+        left: 20%;
+      }
+       
+      .fadeIn-right{
+        left: 80%;
+      }
+    
